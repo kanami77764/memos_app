@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Memo table
+| Columm | Type | Option |
+|:------:|:----:|:------:|
+|food|string|null: false|
+|limit_date|date||
+|user_id|integer|null: false, foreign_key: true|
 
-Things you may want to cover:
+### Association
+- belongs_to :user
 
-* Ruby version
 
-* System dependencies
+## User table
+| Column | Type | Option |
+|:------:|:----:|:------:|
+|email|string|null: false ,add_index  unique: ture|
+|password|string|null: false|
 
-* Configuration
+### Association
+- has_many :foods
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
