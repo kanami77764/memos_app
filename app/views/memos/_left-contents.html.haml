@@ -1,0 +1,37 @@
+.left-contents
+  .upper-content
+    .title 使い切る食材たち
+    %form
+      .formbox
+        .formbox__food FOOD
+        %input{type:"text", class:"formbox__food__name", placeholder: " type a food name"}
+        .formbox__date LIMIT!
+        %input{type:"date", class:"formbox__date__limit"}
+      .btn
+        %input{type:"submit", class:"submit-btn", value:"add food"}
+
+
+  .main-content 
+    
+    .title-content 
+      .title-content__food
+        
+        Food Name
+      .title-content__limit
+        Limit Date
+    .list
+      .list__foods
+        - @memos.each do |memo|
+          .list__foods__one 
+            = icon('fas','fish')
+            = memo.food
+
+      .list__limit
+        - @memos.each do |memo|
+          .list__limit__date
+            = icon('fas', 'exclamation-triangle')
+            = memo.limit_date
+      .list__edit-btn
+        編集
+      .list__delete-btn
+        削除
