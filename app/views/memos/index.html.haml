@@ -4,6 +4,8 @@
       Kicchiri Kigen
     .header-contents__manage
       - if user_signed_in?
+        = link_to user_path(current_user), class: 'header-contents__menage__btn' do
+          自身のページ
         = link_to new_memo_path, class: 'header-contents__manage__btn' do
           新規投稿
         = link_to destroy_user_session_path, method: :delete,  class: 'header-contents__manege__btn' do
