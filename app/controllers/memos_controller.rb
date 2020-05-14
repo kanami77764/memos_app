@@ -9,10 +9,11 @@ class MemosController < ApplicationController
 
   def create
     Memo.create(memo_params)
-    redirect_to root_path
+    redirect_to  root_path
   end
 
   def show
+    @memos = Memo.includes(:user)
     @memo = Memo.find(params[:id])
   end
 

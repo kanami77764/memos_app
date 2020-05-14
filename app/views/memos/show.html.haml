@@ -1,5 +1,6 @@
 .main-content 
-  
+  = link_to root_path do
+    top
   .title-content 
     .title-content__food
       
@@ -8,25 +9,32 @@
       Limit Date
   .list
     .list__foods
-    = @memo.food
+      - @memos.each do |memo|
+        .list__foods__one 
+          = icon('fas','fish')
+          = memo.food
 
-    = link_to root_path do
-      top
-      
-    -#   - @memo.each do |memo|
-    -#     .list__foods__one 
-    -#       = icon('fas','fish')
-    -#       = memo.food
+    .list__limit
+      - @memos.each do |memo|
+        .list__limit__date
+          = icon('fas', 'exclamation-triangle')
+          = memo.limit_date
 
-    -# .list__limit
-    -#   - @memo.each do |memo|
-    -#     .list__limit__date
-    -#       = icon('fas', 'exclamation-triangle')
-    -#       = memo.limit_date
-    -# .list__edit-btn
-    -#   編集
-    -# .list__delete-btn
-    -#   削除
+    .list__show
+      - @memos.each do |memo|
+        .list__show__btn
+          =link_to '詳細', memo_path(memo)
 
+  - if user_signed_in? && current_user.id == @memo.user_id
+    .list__edit
+      - @memos.each do |memo|
+        .list__edit__btn
+          =link_to '編集', edit_memo_path(@memo.id)
 
 
+    .list__delete-btn
+      - @memos.each do |memo|
+        .list__destroy__btn
+          = link_to memo_path(@memo.id), method: :delete do
+            削除
+            
