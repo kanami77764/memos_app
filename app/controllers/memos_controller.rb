@@ -12,6 +12,12 @@ class MemosController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    # @memos = Memo.includes(:user)
+    @memo = Memo.find(params[:id])
+    
+  end
+
   private
   def memo_params
     params.require(:memo).permit(:food, :limit_date).merge(user_id: current_user.id)
