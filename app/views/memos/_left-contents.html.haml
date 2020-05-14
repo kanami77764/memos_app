@@ -1,4 +1,5 @@
 .left-contents
+    
   .upper-content
     .title 使い切る食材たち
     %form
@@ -31,7 +32,12 @@
           .list__limit__date
             = icon('fas', 'exclamation-triangle')
             = memo.limit_date
-      .list__edit-btn
-        編集
+      
+      .list__edit
+        - @memos.each do |memo|
+          .list__edit__btn
+            =link_to '詳細', memo_path(memo)
+
+
       .list__delete-btn
         削除
