@@ -9,7 +9,7 @@ class MemosController < ApplicationController
 
   def create
     Memo.create(memo_params)
-    redirect_to  root_path
+    redirect_to  controller: :users, action: :show
   end
 
   def show
