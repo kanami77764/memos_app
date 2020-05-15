@@ -1,7 +1,4 @@
 class UsersController < ApplicationController
-  def index
-    @memos = Memo.includes(:user)
-  end
 
   def new
     @memo = Memo.new
@@ -9,7 +6,7 @@ class UsersController < ApplicationController
 
   def create
     Memo.create(memo_params)
-    redirect_to users_path
+    redirect_to  controller: :users, action: :show
   end
   
   def show
