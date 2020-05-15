@@ -1,0 +1,91 @@
+$font_color:rgb(78, 88, 99);
+
+.account-new {
+  @include account ;
+
+  &__inner {
+    height: 460px;
+    width: 390px;
+    background-color: rosybrown;
+  
+
+    &__title {
+      @include inner-title;
+    }
+
+      p.signup {
+      font-size: 20px;
+      color: $font_color;
+      text-align: center;
+    }
+
+      p.app-name {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__user-form {
+      height: 270px;
+      width: 400px;
+
+      .field {
+        margin: 0 auto 10px;
+        width: 300px;
+
+        &__email {
+          @include email;
+        }
+
+        &__password {
+          @include password;
+        }
+
+        &__confirmation {
+          @include password;
+        }
+      }
+
+      .actions {
+        
+        text-align: center;
+
+        .submit-btn {
+          height: 45px;
+          width: 150px;
+          border-radius: 20px;
+          color: $font_color;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__login {
+      height: 100px;
+      width: 200px;
+      margin: 0 auto;
+
+      p.already {
+        text-align: center;
+        margin: 0 auto;
+        color: $font_color;
+        font-size: 13px;
+      }
+
+      p.login {
+        background-color:rgb(211, 230, 223);
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 40px;
+        margin: 0 auto;
+        
+        a {
+          color: $font_color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

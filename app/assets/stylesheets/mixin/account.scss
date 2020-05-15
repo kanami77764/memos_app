@@ -1,0 +1,41 @@
+@mixin account {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(205, 245, 234);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin inner-title {
+  height: 100px;
+  width: auto;
+  color: $font_color;
+}
+
+@mixin email {
+    border-radius: 20px;
+    height: 60px;
+    width: 300px;
+    border-style: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+@mixin password {
+    border-radius: 20px;
+    height: 60px;
+    width: 300px;
+    border-style: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  @mixin btn {
+    height: 45px;
+    width: 150px;
+    border-radius: 20px;
+    color: $font_color;
+    outline: none;
+    cursor: pointer;
+  }

@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def create
     Memo.create(memo_params)
-    redirect_to  controller: :users, action: :show
+    redirect_to  redirect_to user_path(current_user)
   end
   
   def show

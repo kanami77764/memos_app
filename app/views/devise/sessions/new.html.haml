@@ -1,0 +1,19 @@
+.account-page
+  .account-page__inner
+    .account-page__inner__title
+      %p.login Log in
+      %p.app-name Kicchiri Kanri
+
+    .account-page__inner__user-form
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: "field__email" ,placeholder: ' Eメール'
+        .field
+          = f.password_field :password, autocomplete: "current-password", class: "field__password" ,placeholder: ' パスワード'
+        .actions
+          = f.submit "Log in", class: "submit-btn"
+
+    .account-page__inner__signup
+      %p.new 　新規登録はこちら
+      %p.signin
+        = render "devise/shared/links"

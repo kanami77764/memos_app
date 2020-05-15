@@ -9,7 +9,7 @@ class MemosController < ApplicationController
 
   def create
     Memo.create(memo_params)
-    redirect_to  controller: :users, action: :show
+    redirect_to user_path(current_user)
   end
 
   def show
@@ -24,13 +24,13 @@ class MemosController < ApplicationController
   def update
     memo = Memo.find(params[:id])
     memo.update(memo_params)
-    redirect_to memo_path(memo)
+    redirect_to user_patn(current_user)
   end
 
   def destroy
     memo = Memo.find(params[:id])
     memo.destroy
-    redirect_to root_path
+    redirect_to user_path(current_user)
   end
 
   private
