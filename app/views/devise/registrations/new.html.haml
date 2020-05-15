@@ -1,0 +1,24 @@
+.account-new
+  .account-new__inner
+    .account-new__inner__title
+      %p.signup Sign up
+      %p.app-name Kicchiri Kanri
+
+    .account-new__inner__user-form
+      = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+        = render "devise/shared/error_messages", resource: resource
+        .field
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: "field__email" ,placeholder: ' Eメール'
+        .field
+          - if @minimum_password_length
+            %em
+          = f.password_field :password, autocomplete: "new-password",class: "field__password" ,placeholder: ' パスワード(6文字以上)'
+        .field
+          = f.password_field :password_confirmation, autocomplete: "new-password",class: "field__confirmation" ,placeholder: ' パスワード（確認用）'
+        .actions
+          = f.submit "Sign up", class: "submit-btn"
+          
+    .account-new__inner__login
+      %p.already アカウントお持ちの方はこちら
+      %p.login
+        = render "devise/shared/links"
