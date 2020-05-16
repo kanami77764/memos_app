@@ -1,15 +1,16 @@
 .left-contents
     
   .upper-content
-    .title 使い切る食材たち
+    .title STOCK
     %form
       .formbox
         .formbox__food FOOD
-        %input{type:"text", class:"formbox__food__name", placeholder: " type a food name"}
+        %input{type:"text", class:"formbox__food__name", placeholder: " まずは、ログイン"}
         .formbox__date LIMIT!
         %input{type:"date", class:"formbox__date__limit"}
       .btn
-        %input{type:"submit", class:"submit-btn", value:"add food"}
+        = link_to new_user_registration_path do
+          %input{type:"submit", class:"submit-btn", value:"add food"}
 
 
   .main-content 
@@ -33,19 +34,19 @@
             = icon('fas', 'exclamation-triangle')
             = memo.limit_date
       
-      .list__show
-        - @memos.each do |memo|
-          .list__show__btn
-            =link_to '詳細', memo_path(memo)
+      -# .list__show
+      -#   - @memos.each do |memo|
+      -#     .list__show__btn
+      -#       =link_to '詳細', memo_path(memo)
 
       .list__edit
         - @memos.each do |memo|
           .list__edit__btn
-            編集
+            変更
 
 
-      .list__delete-btn
+      .list__delete
         - @memos.each do |memo|
-          .list__destroy__btn
-            削除
+          .list__delete__btn
+            終わり
               
