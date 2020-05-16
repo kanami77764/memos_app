@@ -1,24 +1,30 @@
 %header
   .header-contents
     .header-contents__title
-      Kicchiri Kigen  
-    .header-contents__manage
-      - if user_signed_in?
-        = link_to user_path(current_user), class: 'header-contents__manage__btn' do
-          自身のページ
-        = link_to new_user_path, class: 'header-contents__manage__btn' do
-          新規投稿
-        = link_to destroy_user_session_path, method: :delete,  class: 'header-contents__manege__btn' do
-          ログアウト
-      - else
-        = link_to new_user_session_path, class: 'header-contents__manage__btn' do
-          ログイン
-        = link_to new_user_registration_path, class: 'header-contents__manage__btn' do
-          新規登録
-        
-        = link_to new_user_path, class: 'header-contents__manage__logo' do
-          = icon('fas fa-2x', 'cog')
+      .title-box
+        Kicchiri Kigen  
+      .title-memo
+        おうちの食材、きちんと管理
+      .manage
+        - if user_signed_in?
+          -# = link_to user_path(current_user), class: 'header-contents__manage__btn' do
+          -#   自身のページ
+          .manage-btn
+            = link_to new_user_path, class: 'manage__btn' do
+              NEW
+          .manage-btn
+            = link_to destroy_user_session_path, method: :delete,  class: 'manege__btn' do
+              Log out
+        - else
+          .manage-btn
+            = link_to new_user_session_path, class: 'manage__btn' do
+              Log in
+          .manage-btn
+            = link_to new_user_registration_path, class: 'manage__btn' do
+              Sing in
+          
+          -# = link_to new_user_path, class: 'header-contents__manage__logo' do
+          -#   = icon('fas fa-2x', 'cog')
 %main
   .contents
     = render "left-contents"
-    = render "right-contents"
