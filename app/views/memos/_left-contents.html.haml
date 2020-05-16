@@ -1,7 +1,7 @@
 .left-contents
     
   .upper-content
-    .title STOCK
+    .title S T O C K
     %form
       .formbox
         .formbox__food FOOD
@@ -33,11 +33,6 @@
           .list__limit__date
             = icon('fas', 'exclamation-triangle')
             = memo.limit_date
-      
-      -# .list__show
-      -#   - @memos.each do |memo|
-      -#     .list__show__btn
-      -#       =link_to '詳細', memo_path(memo)
 
       .list__edit
         - @memos.each do |memo|
@@ -49,3 +44,4 @@
         - @memos.each do |memo|
           .list__delete__btn
             終わり
+    

@@ -1,20 +1,12 @@
 class MemosController < ApplicationController
   def index
-    @memos = Memo.includes(:user)
+    @memos = Memo.includes(:user).order("limit_date")
   end
 
-  def new
-    @memo = Memo.new
-  end
 
   def create
     Memo.create(memo_params)
     redirect_to user_path(current_user)
-  end
-
-  def show
-    @memos = Memo.includes(:user)
-    @memo = Memo.find(params[:id])
   end
 
   def edit

@@ -1,17 +1,14 @@
 class UsersController < ApplicationController
 
-  def new
-    @memo = Memo.new
-  end
-
   def create
     Memo.create(memo_params)
     redirect_to  redirect_to user_path(current_user)
   end
   
   def show
+    @memo = Memo.new
     @user = User.find(params[:id])
-    @memos = @user.memos
+    @memos = @user.memos.order("limit_date")
   end
 
   private
