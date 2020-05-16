@@ -1,17 +1,21 @@
 .left-contents
-    
   .upper-content
-    .title STOCK
-    %form
+    .title S T O C K
+
+    =form_for(@memo) do |f|
       .formbox
         .formbox__food FOOD
-        %input{type:"text", class:"formbox__food__name", placeholder: " まずは、ログイン"}
+        -# = f.label :FOOD, class: 'formbox__food__label'
+        = f.text_field :food, class: 'formbox__food__name', placeholder: ' type a food name'
+        -# %input{type:"text", class:"formbox__food__name", placeholder: " まずは、ログイン"}
         .formbox__date LIMIT!
-        %input{type:"date", class:"formbox__date__limit"}
+        -# = f.label :LIMIT, class: 'formbox__date__label'
+        = f.date_select :limit_date, class: 'formbox__date__limit'
+        -# %input{type:"date", class:"formbox__date__limit"}
       .btn
-        = link_to new_user_registration_path do
-          %input{type:"submit", class:"submit-btn", value:"add food"}
-
+        = f.submit 'AddFood', class: 'submit-btn'
+        -# = link_to new_user_registration_path do
+        -#   %input{type:"submit", class:"submit-btn", value:"add food"}
 
   .main-content 
     
@@ -33,20 +37,15 @@
           .list__limit__date
             = icon('fas', 'exclamation-triangle')
             = memo.limit_date
-      
-      -# .list__show
-      -#   - @memos.each do |memo|
-      -#     .list__show__btn
-      -#       =link_to '詳細', memo_path(memo)
 
       .list__edit
         - @memos.each do |memo|
           .list__edit__btn
-            変更
+            =link_to '変更', edit_memo_path(memo)
 
 
       .list__delete
         - @memos.each do |memo|
           .list__delete__btn
-            終わり
-              
+            = link_to memo_path(memo), method: :delete do
+              終わり
