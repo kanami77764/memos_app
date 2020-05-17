@@ -5,8 +5,14 @@ class MemosController < ApplicationController
 
 
   def create
-    Memo.create(memo_params)
-    redirect_to user_path(current_user)
+    @memo = Memo.create(memo_params)
+    respond_to do |format|
+      format.html { redirect_to user_path(current_user)}
+      format.json
+    end
+    # respond_to do |format|
+    #   format.html { redirect_to user_path(current_user)}
+    #   format.json { render json: @memo }
   end
 
   def edit
