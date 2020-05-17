@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
 
-  def create
-    Memo.create(memo_params)
-    redirect_to  redirect_to user_path(current_user)
-  end
+  # def create
+  #   Memo.create(memo_params)
+  #   redirect_to user_path(current_user)
+  # end
   
   def show
     @memo = Memo.new

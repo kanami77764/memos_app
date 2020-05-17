@@ -1,4 +1,4 @@
 class Memo < ApplicationRecord
   belongs_to :user
-  validates :food, presence: true
+  validates :food, :limit_date, presence: true
 end
