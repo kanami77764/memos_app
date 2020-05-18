@@ -1,11 +1,12 @@
 class MemosController < ApplicationController
+  before_action :authenticate_user!, only: [:create, :edit, :update, :destroy]
+
   def index
     @memos = Memo.includes(:user).order("limit_date")
   end
 
-
   def create
-    @memo = Memo.new(memo_params)
+    @memo = Memo.create(memo_params)
     if @memo.save
       respond_to do |format|
         # format.html { redirect_to user_path(current_user)}
@@ -13,7 +14,7 @@ class MemosController < ApplicationController
       end
     else
       flash.now[:alert] = 'メッセージを入力してください'
-      render user_path(current_user)
+      render :create
     end
     # respond_to do |format|
     #   format.html { redirect_to user_path(current_user)}
@@ -27,7 +28,11 @@ class MemosController < ApplicationController
   def update
     memo = Memo.find(params[:id])
     memo.update(memo_params)
-    redirect_to user_patn(current_user)
+    if memo.save
+      redirect_to user_path(current_user)
+    else
+      render :edit
+    end
   end
 
   def destroy

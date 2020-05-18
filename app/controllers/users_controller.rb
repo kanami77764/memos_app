@@ -1,10 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :show]
 
-  # def create
-  #   Memo.create(memo_params)
-  #   redirect_to user_path(current_user)
-  # end
-  
   def show
     @memo = Memo.new
     @user = User.find(params[:id])

@@ -21,27 +21,34 @@
         Food Name
       .title-content__limit
         Limit Date
+          
+
     .list
       .list__foods
-        - @memos.each do |memo|
-          .list__foods__one 
-            = icon('fas','fish')
-            = memo.food
+        .list__foods__one 
+          = icon('fas','fish')
+          バター
+        .list__foods__one 
+          = icon('fas','fish')
+          わさび
 
       .list__limit
-        - @memos.each do |memo|
-          .list__limit__date
-            = icon('fas', 'exclamation-triangle')
-            = memo.limit_date
+        .list__limit__date
+          = icon('fas', 'exclamation-triangle')
+          2020-07-01
+        .list__limit__date
+          = icon('fas', 'exclamation-triangle')
+          2020-09-01
 
       .list__edit
-        - @memos.each do |memo|
-          .list__edit__btn
-            変更
+        .list__edit__btn
+          変更  
+        .list__edit__btn
+          変更
 
 
       .list__delete
-        - @memos.each do |memo|
-          .list__delete__btn
-            終わり
-    
+        .list__delete__btn
+          終わり
+        .list__delete__btn
+          終わり
