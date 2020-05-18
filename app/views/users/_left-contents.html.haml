@@ -9,9 +9,7 @@
         = f.text_field :food, class: 'formbox__food__name', placeholder: ' type a food name'
         -# %input{type:"text", class:"formbox__food__name", placeholder: " まずは、ログイン"}
         .formbox__date LIMIT!
-        -# = f.label :LIMIT, class: 'formbox__date__label'
         = f.date_select :limit_date, class: 'formbox__date__limit'
-        -# %input{type:"date", class:"formbox__date__limit"}
       .btn
         = f.submit 'AddFood', class: 'submit-btn'
         -# = link_to new_user_registration_path do

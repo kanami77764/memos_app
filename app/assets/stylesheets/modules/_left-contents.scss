@@ -2,7 +2,7 @@
   
   margin: 0 auto;
   .upper-content {
-    height: 200px;
+    height: 250px;
     width: 720px;
     margin: 0 auto 10px;
     background-color: rosybrown;
@@ -12,10 +12,12 @@
 
     .title {
       height: 50px;
-      width: 100%;
-      font-size: 30px;
-      color: rgb(77, 79, 80);
+      width: auto;
+      color: $font-color;
+      font-size: 24px;
       text-align: center;
+      line-height: 50px;
+      margin-bottom: 20px;
     }
 
 
@@ -30,6 +32,7 @@
         line-height: 60px;
         text-align: center;
         margin-right: 7px;
+        color: rgb(77, 79, 80);
       
         &__name {
           width: 240px;
@@ -48,6 +51,7 @@
         text-align: center;
         margin-left: 15px;
         margin-right: 7px;
+        color: rgb(77, 79, 80);
         
 
         &__limit {
@@ -59,6 +63,12 @@
           
         }
       }
+      select {
+        outline: none;
+        border-style: none;
+        margin-left: 2px;
+        width: 67px;
+      }
     }
       .btn {
         text-align: center;
@@ -67,10 +77,9 @@
       .submit-btn {
         height: 50px;
         width: 130px;
-        margin-top: 10px;
+        margin-top: 20px;
         border-radius: 15px;
-        background-color: rosybrown;
-        /* border: solid 3px rosybrown; */
+        color: rgb(77, 79, 80);
         cursor: pointer;
         outline: none;
 
@@ -83,9 +92,11 @@
     width: 100%;
 
     .title-content {
+      width: 700px;
       background-color: #395063;
       display: flex;
       justify-content: center;
+      margin-left: 10px;
 
 
       &__food {
