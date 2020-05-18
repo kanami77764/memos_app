@@ -12,7 +12,7 @@ Now you will be rest assured.
 
 
 ＃DEMO
-![Demo](https://gyazo.com/0337e3d1a9714194dcf51f21489300d7)
+![Demo](https://i.gyazo.com/0337e3d1a9714194dcf51f21489300d7.mp4)
 
 ＃Features
 *"Kicchiri Kigen" is a simple design.
