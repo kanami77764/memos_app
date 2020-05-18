@@ -1,0 +1,11 @@
+.edit-box
+  .title E d i t
+  = form_for (@memo) do |f| 
+    .form-edit
+      .form-edit__food FOOD
+      = f.text_field :food, class: 'form-edit__food__name'
+      .form-edit__date LIMIT!
+      = f.date_select :limit_date, class: 'form-edit__date__limit'
+      -# %input{type:"date", class:"formbox__date__limit"}
+    .btn
+      = f.submit 'Change',class:"edit-btn"

@@ -7,11 +7,6 @@
         おうちの食材、きちんと管理
       .manage
         - if user_signed_in?
-          -# = link_to user_path(current_user), class: 'header-contents__manage__btn' do
-          -#   自身のページ
-          -# .manage-btn
-          -#   = link_to new_user_path, class: 'manage__btn' do
-          -#     NEW
           .manage-btn
             = link_to destroy_user_session_path, method: :delete,  class: 'manege__btn' do
               Log out
@@ -22,9 +17,7 @@
           .manage-btn
             = link_to new_user_registration_path, class: 'manage__btn' do
               Sing in
-          
-          -# = link_to new_user_path, class: 'header-contents__manage__logo' do
-          -#   = icon('fas fa-2x', 'cog')
+              
 %main
   .contents
     = render "left-contents"

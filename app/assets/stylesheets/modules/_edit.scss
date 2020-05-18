@@ -1,0 +1,87 @@
+.main-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .edit-box {
+    height: 300px;
+    width: 600px;
+    background-color: rosybrown;
+    padding-top: 20px;
+    border-radius: 20px;
+    
+    .title {
+      height: 50px;
+      width: auto;
+      color: $font-color;
+      font-size: 24px;
+      text-align: center;
+      line-height: 50px;
+      margin-bottom: 20px;
+
+    }
+
+    .form-edit {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      &__food {
+        height: 50px;
+        width: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin-right: 7px;
+        color: rgb(77, 79, 80);
+       
+
+        &__name {
+          width: 180px;
+          border-radius: 10px;
+          border-style: none;
+          outline: none;
+        }
+      }
+      &__date {
+        height: 50px;
+        width: 70px;
+        line-height: 60px;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 7px;
+        color: rgb(77, 79, 80);
+        
+
+        &__limit {
+          width: 210px;
+          border-radius: 10px;
+          border-style: none;
+          outline: none;
+        }
+      }
+      select {
+        outline: none;
+        border-style: none;
+        margin-left: 2px;
+        width: 67px;
+      }
+    }
+    .btn {
+      text-align: center;
+        margin-top: 5px;
+
+      .edit-btn {
+        height: 50px;
+        width: 130px;
+        margin-top: 20px;
+        border-radius: 15px;
+        color: rgb(77, 79, 80);
+        cursor: pointer;
+        outline: none;
+      }
+    }
+
+
+  }
+}
