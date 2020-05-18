@@ -28,7 +28,7 @@ $(function(){
   $('#new_memo').on('submit', function(e){
     e.preventDefault();
     let formData = new FormData(this);
-    let url = $(this).attr('action')
+    let url = $(this).attr('action');
     $.ajax({
       url: url,
       type: "POST",
@@ -54,7 +54,9 @@ $(function(){
       $('.submit-btn').removeAttr("data-disable-with");
     })
     .fail(function(){
-      alert('エラー');
+      alert('メモを入力してください');
+      $('.submit-btn').prop('disabled', false);
+      $('.submit-btn').removeAttr("data-disable-with");
     })
   });
 });

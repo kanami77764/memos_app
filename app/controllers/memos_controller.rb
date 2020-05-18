@@ -6,15 +6,17 @@ class MemosController < ApplicationController
   end
 
   def create
-    @memo = Memo.create(memo_params)
+    @memo = Memo.new(memo_params)
     if @memo.save
       respond_to do |format|
         # format.html { redirect_to user_path(current_user)}
         format.json
       end
     else
-      flash.now[:alert] = 'メッセージを入力してください'
-      render :create
+      @user = User.find(params[:id])
+      @memos = @user.memos.order("limit_date")
+      flash[:alert] = 'メモを入力してください'
+      render user_path(current_user)
     end
     # respond_to do |format|
     #   format.html { redirect_to user_path(current_user)}
