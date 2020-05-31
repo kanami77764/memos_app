@@ -17,9 +17,18 @@ You can manage your food items best-before date.
 ## 🎨 DEMO
 ![memoapp説明用１](https://user-images.githubusercontent.com/64050565/83348378-ee67e780-a366-11ea-8933-6b60b35f84cc.png)
 
+## 💬 Development purpose
+I thought I grasped food items best-before date, and would like to use a food up.
+<br>But when execution is difficult by the following point, I have that...
+<br>①The point that a great deal of foods are bought by once's shopping by influence of coronavirus
+<br>②The point that the food which isn't frequently used is often left
+<br>
+<br>This application was made to settle those!
+
+
 
 ## 📦 Features
-<br>*"Kicchiri Kigen" is a simple design.
+*"Kicchiri Kigen" is a simple design.
 <br>*Save added data and show your memo into database
 <br>*Manage them in order from closest date.
 <br>*Login function
@@ -28,7 +37,7 @@ You can manage your food items best-before date.
 
 
 ## 💬 Usage
-<br>*ruby 2.5.1
+*ruby 2.5.1
 <br>*Rails 5.0.7.2
 
 
