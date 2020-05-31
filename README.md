@@ -1,6 +1,6 @@
 # README
 
-#Kicchiri Kigen
+# Kicchiri Kigen
 This is a simple app of memo.
 
 #Description
