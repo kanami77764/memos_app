@@ -6,7 +6,7 @@ This is a simple app of memo.
 ### 🌐 App URL
 https://sheltered-tundra-42826.herokuapp.com/
 
-## Description
+## 💬 Description
 You can manage your food items best-before date.
 <br>And you can easily register a memo just by entering the characters.
 <br>Now you will be rest assured.
@@ -14,11 +14,11 @@ You can manage your food items best-before date.
 <br>"Kicchiri" means properly and "Kanri" means management.
 
 
-## DEMO
+## 🎨 DEMO
 ![memoapp説明用１](https://user-images.githubusercontent.com/64050565/83348378-ee67e780-a366-11ea-8933-6b60b35f84cc.png)
 
 
-## 💬 Features
+## 📦 Features
 <br>*"Kicchiri Kigen" is a simple design.
 <br>*Save added data and show your memo into database
 <br>*Manage them in order from closest date.
@@ -41,7 +41,7 @@ $ rails db:create
 $rals db:migrate
 ```
 
-## Author
+## 👀 Author
 *kanami66674
 
 ## 💬 DataBase
