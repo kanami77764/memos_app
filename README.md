@@ -1,7 +1,7 @@
 # README
 
 #Kicchiri Kigen
-This is an simple app of memo.
+This is a simple app of memo.
 
 #Description
 You can manage your food items best-before date.
@@ -12,7 +12,8 @@ Now you will be rest assured.
 
 
 ＃DEMO
-![Demo](https://i.gyazo.com/0337e3d1a9714194dcf51f21489300d7.mp4)
+![memoapp説明用１](https://user-images.githubusercontent.com/64050565/83348378-ee67e780-a366-11ea-8933-6b60b35f84cc.png)
+
 
 ＃Features
 *"Kicchiri Kigen" is a simple design.
