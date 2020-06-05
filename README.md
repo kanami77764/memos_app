@@ -1,3 +1,10 @@
+![管理アプリ](https://user-images.githubusercontent.com/64050565/83852558-f18c1a80-a74e-11ea-9235-3bd3e745f74b.png)
+
+![ruby](https://img.shields.io/badge/-ruby-red)
+![ruby on rails](https://img.shields.io/badge/-ruby%20on%20rails-orange)
+![jQuery](https://img.shields.io/badge/-jquery-green)
+![heroku](https://img.shields.io/badge/-heroku-blueviolet)
+
 # README
 
 ## Kicchiri Kigen
