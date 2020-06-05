@@ -113,17 +113,18 @@ I thought I grasped food items best-before date, and would like to use a food up
 
 
 ## 📦 Features
-*"Kicchiri Kigen" is a simple design.
-<br>*Save added data and show your memo into database
-<br>*Manage them in order from closest date.
-<br>*Login function
+＊"Kicchiri Kigen" is a simple design.
+<br>＊Save added data and show your memo into database
+<br>＊Manage them in order from closest date.
+<br>＊Login function
+<br>＊Ability to delete and edit what you posted
 <br>
 <br>"Kicchiri Kigen" used [ruby on rails](https://rubyonrails.org/)
 
 
 ## 💬 Usage
-*ruby 2.5.1
-<br>*Rails 5.0.7.2
+＊ruby 2.5.1
+<br>＊Rails 5.0.7.2
 
 
 ## 💬 Install
@@ -136,4 +137,4 @@ $ rals db:migrate
 ```
 
 ## 👀 Author
-*kanami66674
+＊kanami66674
