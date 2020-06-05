@@ -36,7 +36,7 @@ https://sheltered-tundra-42826.herokuapp.com/
 
 
 ## 📦 実装機能
-###"Kicchiri Kigen"の機能
+### "Kicchiri Kigen"の機能
 <br>＊メモ（食材）投稿機能
 <br>＊投稿したモノを削除、編集できる機能
 <br>＊投稿したものはデータとして管理、閲覧できる機能
