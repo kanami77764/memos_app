@@ -57,7 +57,7 @@ $ git clone https://github.com/kanami77764/memos_app.git
 $ cd memos_app
 $ bundle install
 $ rails db:create
-$rals db:migrate
+$ rals db:migrate
 ```
 
 ## 👀 作成者
@@ -132,7 +132,7 @@ $ git clone https://github.com/kanami77764/memos_app.git
 $ cd memos_app
 $ bundle install
 $ rails db:create
-$rals db:migrate
+$ rals db:migrate
 ```
 
 ## 👀 Author
