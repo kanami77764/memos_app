@@ -1,10 +1,15 @@
 $font_color:rgb(78, 88, 99);
+#error_explanation {
+  color: red;
+  font-size: small;
+  display: contents;
+}
 
 .account-new {
   @include account ;
 
   &__inner {
-    height: 460px;
+    height: 500px;
     width: 390px;
     background-color: rosybrown;
   
@@ -54,16 +59,16 @@ $font_color:rgb(78, 88, 99);
           width: 150px;
           border-radius: 20px;
           color: $font_color;
-          outline: none;
+          border: none;
           cursor: pointer;
         }
       }
     }
 
     &__login {
-      height: 100px;
+      height: 70px;
       width: 200px;
-      margin: 0 auto;
+      margin: 50px auto 0;
 
       p.already {
         text-align: center;
