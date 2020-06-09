@@ -68,6 +68,7 @@
         border-style: none;
         margin-left: 2px;
         width: 67px;
+        border-radius: 10px;
       }
     }
       .btn {
@@ -81,7 +82,7 @@
         border-radius: 15px;
         color: rgb(77, 79, 80);
         cursor: pointer;
-        outline: none;
+        border: none;
 
       }
     }
@@ -130,7 +131,6 @@
         &__one {
           height: 50px;
           width: 200px;
-          // background-color: rgb(129, 129, 243);
           margin: 0 30px 0 50px;
           border-bottom: solid 1px rosybrown;
           line-height: 70px;
@@ -144,7 +144,6 @@
         &__date {
           height: 50px;
           width: 200px;
-          // background-color: rgb(128, 128, 209);
           margin-right: 10px;
           border-bottom: solid 1px rosybrown;
           line-height: 70px;
