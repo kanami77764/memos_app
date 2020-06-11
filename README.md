@@ -12,6 +12,10 @@ Kicchiri Kigen(きっちり　期限)は、家にある食材を簡単に管理�
 
 ### 🌐 App URL
 https://sheltered-tundra-42826.herokuapp.com/
+<br>
+テストアカウント:1@gmail.com
+<br>
+テストパスワード:111111(6桁)
 
 ## 💬 アプリ説明
 食材や調味料など、すぐ使いきれないモノや日持ちするモノ（1ヶ月ほど）の、期限管理を簡単にします。
@@ -93,6 +97,10 @@ This is a simple app of memo.
 
 ### 🌐 App URL
 https://sheltered-tundra-42826.herokuapp.com/
+<br>
+test_account:1@gmail.com
+<br>
+test_password:111111(6 length)
 
 ## 💬 Description
 You can manage your food items best-before date.
