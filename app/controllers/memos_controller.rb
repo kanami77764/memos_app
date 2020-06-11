@@ -18,9 +18,6 @@ class MemosController < ApplicationController
       flash[:alert] = 'メモを入力してください'
       render user_path(current_user)
     end
-    # respond_to do |format|
-    #   format.html { redirect_to user_path(current_user)}
-    #   format.json { render json: @memo }
   end
 
   def edit
