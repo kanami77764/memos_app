@@ -4,6 +4,8 @@
 ![ruby on rails](https://img.shields.io/badge/-ruby%20on%20rails-orange)
 ![jQuery](https://img.shields.io/badge/-jquery-green)
 ![heroku](https://img.shields.io/badge/-heroku-blueviolet)
+![MySQL](https://img.shields.io/badge/-MySQL-ff69b4)
+
 
 # README
 
@@ -42,13 +44,29 @@ https://sheltered-tundra-42826.herokuapp.com/
 ## 📦 実装機能
 ### "Kicchiri Kigen"の機能
 <br>＊メモ（食材）投稿機能
+<br>＊メモ投稿時の、非同期通信機能
 <br>＊投稿したモノを削除、編集できる機能
-<br>＊投稿したものはデータとして管理、閲覧できる機能
+<br>＊投稿したものはデータベースに管理、閲覧できる機能
 <br>＊期限が近い順に食材の管理ができる機能
 <br>＊ログイン機能実装
-
+<br>
 <br>ruby on railsを使用しています [ruby on rails](https://rubyonrails.org/)
+<br>
+<br>
+## 📦 工夫した点
+<br>＊メモ投稿時の、非同期通信
+<br>　⇨ユーザーの視点で考えたとき、更新の時間が早く、少しでもスムーズに使えるアプリを目指したいと考えたからです。
+<br>＊期限が近い順に食材の管理ができる機能
+<br>　⇨こちらも、ユーザー視点で考えたときに、期限が近いことが見やすい位置にある方が使いやすいと考えました。
+<br>＊ログイン機能実装
+<br>　⇨deviseの機能（サーバー側）のみでなく、viewsがどのようになっているかなども気になっていたので、
+<br>　　自分のアプリに追加することで、理解を深められると考え、追加しました。
 
+## 📦 今後の実装したい機能
+<br>＊食材の残量表示（３種類）
+<br>＊期限だけでなく、買い物メモを同じ画面に追加（上記の残量表示を元に必要なものを追加ができると便利）
+<br>＊スマホでも見やすいようにview画面の調整
+<br>
 
 ## 💬 使っている言語、フレームワーク
 ＊ruby 2.5.1
