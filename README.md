@@ -9,8 +9,8 @@
 
 # README
 
-## Kicchiri Kigen
-Kicchiri Kigen(きっちり　期限)は、家にある食材を簡単に管理できるアプリです。
+## Kicchiri Kanri
+Kicchiri Kanri(きっちり　管理)は、家にある食材を簡単に管理できるアプリです。
 
 ### 🌐 App URL
 https://sheltered-tundra-42826.herokuapp.com/
@@ -42,7 +42,7 @@ https://sheltered-tundra-42826.herokuapp.com/
 
 
 ## 📦 実装機能
-### "Kicchiri Kigen"の機能
+### "Kicchiri Kanri"の機能
 <br>＊メモ（食材）投稿機能
 <br>＊メモ投稿時の、非同期通信機能
 <br>＊投稿したモノを削除、編集できる機能
@@ -110,7 +110,7 @@ kanami66674
 
 # README(English ver)
 
-## Kicchiri Kigen
+## Kicchiri Kanri
 This is a simple app of memo.
 
 ### 🌐 App URL
@@ -145,7 +145,7 @@ I thought I grasped food items best-before date, and would like to use a food up
 <br>＊Login function
 <br>＊Ability to delete and edit what you posted
 <br>
-<br>"Kicchiri Kigen" used [ruby on rails](https://rubyonrails.org/)
+<br>"Kicchiri Kanri" used [ruby on rails](https://rubyonrails.org/)
 
 
 ## 💬 Usage
